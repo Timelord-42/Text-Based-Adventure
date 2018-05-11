@@ -1,4 +1,4 @@
-package com.example.klugiewicza.textbasedadventure;
+package com.example.klugiewicza.textbasedadventure.Util;
 
 public class Event
 {
@@ -43,7 +43,7 @@ public class Event
         this.Option4Text = Option4Text;
     }
 
-    public voud SetOptionNames( String Option1Name, String Option2Name, String Option3Name, String Option4Name)
+    public void SetOptionNames( String Option1Name, String Option2Name, String Option3Name, String Option4Name)
     {
         this.Option1Name = Option1Name;
         this.Option2Name = Option2Name;
@@ -54,6 +54,12 @@ public class Event
     public void setName(String name)
     {
         this.name = name;
+    }
+
+    public Event(String name, String description)
+    {
+        this.name = name;
+        this.description = description;
     }
 
     public void setDescription(String description)
