@@ -6,29 +6,35 @@ public class Event
     public String name;
     public String description;
 
-    public String Option_1_Text;
-    public String Option_2_Text;
-    public String Option_3_Text;
-    public String Option_4_Text;
+    public String Option1Text;
+    public String Option2Text;
+    public String Option3Text;
+    public String Option4Text;
 
-    public String Option_1_Event;
-    public String Option_2_Event;
-    public String Option_3_Event;
-    public String Option_4_Event;
+    public String Option1Name;
+    public String Option2Name;
+    public String Option3Name;
+    public String Option4Name;
 
-    public Event(String name, String description, String Option_1_Text, String Option_2_Text, String Option_3_Text, String Option_4_Text
-            , String Option_1_Event, String Option_2_Event, String Option_3_Event, String Option_4_Event)
+    public Event(String name, String description, String Option1Text, String Option2Text, String Option3Text, String Option4Text
+            , String Option1Name, String Option2Name, String Option3Name, String Option4Name)
     {
         this.name = name;
         this.description = description;
-        this.Option_1_Text = Option_1_Text;
-        this.Option_2_Text = Option_2_Text;
-        this.Option_3_Text = Option_3_Text;
-        this.Option_4_Text = Option_4_Text;
+        this.Option1Text = Option1Text;
+        this.Option2Text = Option2Text;
+        this.Option3Text = Option3Text;
+        this.Option4Text = Option4Text;
 
-        this.Option_1_Event = Option_1_Event;
-        this.Option_2_Event = Option_2_Event;
-        this.Option_3_Event = Option_3_Event;
-        this.Option_4_Event = Option_4_Event;
+        this.Option1Name = Option1Name;
+        this.Option2Name = Option2Name;
+        this.Option3Name = Option3Name;
+        this.Option4Name = Option4Name;
     }
+
+    public void Option1Event(){}
+    public void Option2Event(){}
+    public void Option3Event(){}
+    public void Option4Event(){}
+
 }
