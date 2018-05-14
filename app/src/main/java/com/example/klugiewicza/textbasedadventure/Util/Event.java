@@ -16,10 +16,16 @@ public class Event
     public String Option3Name;
     public String Option4Name;
 
+    public String Option1Pointer;
+    public String Option2Pointer;
+    public String Option3Pointer;
+    public String Option4Pointer;
+
     public Event(){}
 
-    public Event(String name, String description, String Option1Text, String Option2Text, String Option3Text, String Option4Text
-            , String Option1Name, String Option2Name, String Option3Name, String Option4Name)
+    public Event(String name, String description, String Option1Text, String Option2Text, String Option3Text, String Option4Text,
+                 String Option1Name, String Option2Name, String Option3Name, String Option4Name,
+                 String Option1Pointer, String Option2Pointer, String Option3Pointer, String Option4Pointer)
     {
         this.name = name;
         this.description = description;
@@ -33,6 +39,11 @@ public class Event
         this.Option2Name = Option2Name;
         this.Option3Name = Option3Name;
         this.Option4Name = Option4Name;
+
+        this.Option1Pointer = Option1Pointer;
+        this.Option2Pointer = Option2Pointer;
+        this.Option3Pointer = Option3Pointer;
+        this.Option4Pointer = Option4Pointer;
     }
 
     public void SetOptionTexts(String Option1Text, String Option2Text, String Option3Text, String Option4Text)
@@ -49,6 +60,14 @@ public class Event
         this.Option2Name = Option2Name;
         this.Option3Name = Option3Name;
         this.Option4Name = Option4Name;
+    }
+
+    public void SetOptionPointers( String Option1Pointer, String Option2Pointer, String Option3Pointer, String Option4Pointer)
+    {
+        this.Option1Pointer = Option1Pointer;
+        this.Option2Pointer = Option2Pointer;
+        this.Option3Pointer = Option3Pointer;
+        this.Option4Pointer = Option4Pointer;
     }
 
     public void setName(String name)

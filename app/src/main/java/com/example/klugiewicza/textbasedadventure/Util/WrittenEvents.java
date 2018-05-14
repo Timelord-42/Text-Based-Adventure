@@ -1,5 +1,7 @@
 package com.example.klugiewicza.textbasedadventure.Util;
 
+import com.example.klugiewicza.textbasedadventure.Events.StartingEvent;
+
 import java.util.ArrayList;
 
 public class WrittenEvents
@@ -8,10 +10,24 @@ public class WrittenEvents
     {
         ArrayList<Event> Events = new ArrayList<Event>();
 
-        Events += new StartingEvent
-                (
-                
+        StartingEvent startingevent = new StartingEvent
+                ("",
+                 "",
+                 "",
+                 "",
+                 "",
+                 "",
+                 "",
+                 "",
+                 "",
+                 "",
+                 "",
+                 "",
+                 "",
+                 ""
                 );
+
+        Events.add(startingevent);
 
         return Events;
     }
