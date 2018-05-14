@@ -24,4 +24,23 @@ public class Main extends AppCompatActivity
         events = WrittenEvents.InitializeEvents();
     }
 
+    public void Button1click()
+    {
+
+    }
+
+    public void Button2click()
+    {
+
+    }
+
+    public void Button3click()
+    {
+
+    }
+
+    public void Button4click()
+    {
+
+    }
 }
