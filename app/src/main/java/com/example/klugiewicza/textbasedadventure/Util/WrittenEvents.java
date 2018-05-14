@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 public class WrittenEvents
 {
-    public ArrayList<Event> InitializeEvents()
+    public static ArrayList<Event> InitializeEvents()
     {
         ArrayList<Event> Events = new ArrayList<Event>();
 
