@@ -8,6 +8,7 @@ import android.widget.*;
 import com.example.klugiewicza.textbasedadventure.Util.Event;
 import com.example.klugiewicza.textbasedadventure.Util.WrittenEvents;
 import java.util.ArrayList;
+import java.util.concurrent.TimeUnit;
 
 public class Main extends AppCompatActivity
 {
@@ -28,6 +29,7 @@ public class Main extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Main();
     }
 
     void Main()
@@ -41,8 +43,7 @@ public class Main extends AppCompatActivity
 
 
         events = WrittenEvents.InitializeEvents();
-        int x = 0;
-FindandloadEvent("startingevent");
+        FindandloadEvent("startingevent");
     }
 
     public void LoadEvent(Event e)
@@ -57,21 +58,41 @@ FindandloadEvent("startingevent");
     public void OnClick1(View v)
     {
         FindandloadEvent(activeevent.Option1Pointer);
+        try
+        {
+            TimeUnit.SECONDS.sleep(1);
+        }
+        catch(Exception e){}
     }
 
     public void OnClick2(View v)
     {
         FindandloadEvent(activeevent.Option2Pointer);
+        try
+        {
+            TimeUnit.SECONDS.sleep(1);
+        }
+        catch(Exception e){}
     }
 
     public void OnClick3(View v)
     {
         FindandloadEvent(activeevent.Option3Pointer);
+        try
+        {
+            TimeUnit.SECONDS.sleep(1);
+        }
+        catch(Exception e){}
     }
 
     public void OnClick4(View v)
     {
         FindandloadEvent(activeevent.Option4Pointer);
+        try
+        {
+            TimeUnit.SECONDS.sleep(1);
+        }
+        catch(Exception e){}
     }
 
     public void FindandloadEvent(String s)
@@ -81,7 +102,7 @@ FindandloadEvent("startingevent");
         {
             if(events.get(x).name.equals(s))
             {
-                x = (events.size() - 1);
+                x = events.size();
                 activeevent = events.get(x);
                 LoadEvent(events.get(x));
             }
