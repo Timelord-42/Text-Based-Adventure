@@ -19,7 +19,6 @@ public class Main extends AppCompatActivity
     public Button button2;
     public Button button3;
     public Button button4;
-
     public Event activeevent;
 
     public TextView maintext;
