@@ -56,6 +56,7 @@ public class Main extends AppCompatActivity
 
     public void OnClick1(View v)
     {
+        activeevent.Option1Event();
         FindandloadEvent(activeevent.Option1Pointer);
         try
         {
@@ -66,6 +67,7 @@ public class Main extends AppCompatActivity
 
     public void OnClick2(View v)
     {
+        activeevent.Option2Event();
         FindandloadEvent(activeevent.Option2Pointer);
         try
         {
@@ -76,6 +78,7 @@ public class Main extends AppCompatActivity
 
     public void OnClick3(View v)
     {
+        activeevent.Option3Event();
         FindandloadEvent(activeevent.Option3Pointer);
         try
         {
@@ -86,6 +89,7 @@ public class Main extends AppCompatActivity
 
     public void OnClick4(View v)
     {
+        activeevent.Option4Event();
         FindandloadEvent(activeevent.Option4Pointer);
         try
         {
