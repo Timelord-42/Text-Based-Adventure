@@ -14,7 +14,7 @@ public class Main extends AppCompatActivity
 {
 
 
-    public ArrayList<Event> events;
+    public static ArrayList<Event> events;
     public Button button1;
     public Button button2;
     public Button button3;
@@ -41,7 +41,7 @@ public class Main extends AppCompatActivity
         maintext = (TextView) findViewById(R.id.MainText);
 
 
-        events = WrittenEvents.InitializeEvents();
+        WrittenEvents.InitializeEvents();
         FindandloadEvent("startingevent");
     }
 

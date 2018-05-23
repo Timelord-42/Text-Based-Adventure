@@ -7,10 +7,8 @@ import java.util.ArrayList;
 
 public class WrittenEvents
 {
-    public static ArrayList<Event> InitializeEvents()
+    public static void InitializeEvents()
     {
-        ArrayList<Event> Events = new ArrayList<Event>();
-
         StartingEvent startingevent = new StartingEvent
                 ("",
                  "",
@@ -36,9 +34,5 @@ public class WrittenEvents
                         "",
                         ""
                 );
-
-        Events.add(startingevent);
-
-        return Events;
     }
 }

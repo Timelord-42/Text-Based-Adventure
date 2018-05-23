@@ -1,5 +1,7 @@
 package com.example.klugiewicza.textbasedadventure.Util;
 
+import com.example.klugiewicza.textbasedadventure.Main;
+
 public class Event
 {
     //created for all events, has properties to control events that lead into it, what cna happen.
@@ -33,6 +35,7 @@ public class Event
         this.Option2Pointer = Option2Pointer;
         this.Option3Pointer = Option3Pointer;
         this.Option4Pointer = Option4Pointer;
+        Main.events.add(this);
     }
 
     public void SetOptionTexts(String Option1Text, String Option2Text, String Option3Text, String Option4Text)
