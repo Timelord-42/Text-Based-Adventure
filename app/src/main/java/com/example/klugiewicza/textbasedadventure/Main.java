@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.*;
 
 import com.example.klugiewicza.textbasedadventure.Util.Event;
-import com.example.klugiewicza.textbasedadventure.Util.WrittenEvents;
+
 import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 
@@ -40,14 +40,33 @@ public class Main extends AppCompatActivity
 
         maintext = (TextView) findViewById(R.id.MainText);
 
-
-        WrittenEvents.InitializeEvents();
         FindandloadEvent("startingevent");
     }
 
     public void LoadEvent(Event e)
     {
         maintext.setText(e.description);
+
+        if(!(e.Option1Text.equals("") || e.Option2Text.equals("") || e.Option3Text.equals("") || e.Option4Text.equals("")))
+        {
+            button1.setVisibility(View.VISIBLE);
+            button2.setVisibility(View.VISIBLE);
+            button3.setVisibility(View.VISIBLE);
+            button4.setVisibility(View.VISIBLE);
+        }
+        else
+        {
+            if(e.Option1Text.equals("")) button1.setVisibility(View.INVISIBLE); else button1.setVisibility(View.VISIBLE);
+            if(e.Option2Text.equals("")) button2.setVisibility(View.INVISIBLE); else button2.setVisibility(View.VISIBLE);
+            if(e.Option3Text.equals("")) button3.setVisibility(View.INVISIBLE); else button3.setVisibility(View.VISIBLE);
+            if(e.Option4Text.equals("")) button4.setVisibility(View.INVISIBLE); else button4.setVisibility(View.VISIBLE);
+            if(e.Option1Text.equals("") && e.Option2Text.equals("") && e.Option3Text.equals("") && e.Option4Text.equals(""))
+            {
+                FindandloadEvent("errorevent");
+            }
+        }
+
+
         button1.setText(e.Option1Text);
         button2.setText(e.Option2Text);
         button3.setText(e.Option3Text);
@@ -100,6 +119,7 @@ public class Main extends AppCompatActivity
 
     public void FindandloadEvent(String s)
     {
+        boolean possiblyneededandyetunreasonablylongnamedboolean = false;
         int x = 0;
         while( x < events.size())
         {
@@ -108,8 +128,10 @@ public class Main extends AppCompatActivity
                 x = events.size();
                 activeevent = events.get(x);
                 LoadEvent(events.get(x));
+                possiblyneededandyetunreasonablylongnamedboolean = true;
             }
             x += 1;
         }
+        if(!possiblyneededandyetunreasonablylongnamedboolean) FindandloadEvent("errorevent");
     }
 }

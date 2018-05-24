@@ -3,10 +3,10 @@ package com.example.klugiewicza.textbasedadventure.Events;
 import com.example.klugiewicza.textbasedadventure.Main;
 import com.example.klugiewicza.textbasedadventure.Util.Event;
 
-public class Volcano extends Event
+public class ErrorEvent extends Event
 {
-    public Volcano(String name, String description, String Option1Text, String Option2Text, String Option3Text, String Option4Text,
-                 String Option1Pointer, String Option2Pointer, String Option3Pointer, String Option4Pointer)
+    public ErrorEvent(String name, String description, String Option1Text, String Option2Text, String Option3Text, String Option4Text,
+                   String Option1Pointer, String Option2Pointer, String Option3Pointer, String Option4Pointer)
     {
         this.name = name;
         this.description = description;
@@ -47,16 +47,16 @@ public class Volcano extends Event
         super.Option4Event();
     }
 
-    Volcano volcano = new Volcano
-            ("volcano",
-                    "",
-                    "",
-                    "",
-                    "",
-                    "",
-                    "",
-                    "",
-                    "",
-                    ""
+    ErrorEvent error = new ErrorEvent
+            ("errorevent",
+                    "Something somewhere just went terribly and horribly wrong.",
+                    "I hope a developer just lost a job.",
+                    "This is why we can't have nice things.",
+                    "Eh, still a better story hook than the last campaign I played.",
+                    "ERROR: Cannot find file faith.txt in folder C:/Users/Humanity/, are you sure you didn't lose it?",
+                    "thetruecalling",
+                    "thetruecalling",
+                    "amightyquestunfolds",
+                    "renewthefaith"
             );
 }

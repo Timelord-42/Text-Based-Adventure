@@ -1,5 +1,6 @@
 package com.example.klugiewicza.textbasedadventure.Events;
 
+import com.example.klugiewicza.textbasedadventure.Main;
 import com.example.klugiewicza.textbasedadventure.Util.Event;
 
 public class StartingEvent extends Event
@@ -19,6 +20,7 @@ public class StartingEvent extends Event
         this.Option2Pointer = Option2Pointer;
         this.Option3Pointer = Option3Pointer;
         this.Option4Pointer = Option4Pointer;
+        Main.events.add(this);
     }
 
     @Override
@@ -44,4 +46,17 @@ public class StartingEvent extends Event
     {
         super.Option4Event();
     }
+
+    StartingEvent startingevent = new StartingEvent
+            ("startingevent",
+                    "How difficult a campaign are you interested in?",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+            );
 }

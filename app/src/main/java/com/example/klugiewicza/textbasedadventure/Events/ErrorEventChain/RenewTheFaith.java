@@ -1,12 +1,12 @@
-package com.example.klugiewicza.textbasedadventure.Events;
+package com.example.klugiewicza.textbasedadventure.Events.ErrorEventChain;
 
 import com.example.klugiewicza.textbasedadventure.Main;
 import com.example.klugiewicza.textbasedadventure.Util.Event;
 
-public class Volcano extends Event
+public class RenewTheFaith extends Event
 {
-    public Volcano(String name, String description, String Option1Text, String Option2Text, String Option3Text, String Option4Text,
-                 String Option1Pointer, String Option2Pointer, String Option3Pointer, String Option4Pointer)
+    public RenewTheFaith(String name, String description, String Option1Text, String Option2Text, String Option3Text, String Option4Text,
+                   String Option1Pointer, String Option2Pointer, String Option3Pointer, String Option4Pointer)
     {
         this.name = name;
         this.description = description;
@@ -47,15 +47,15 @@ public class Volcano extends Event
         super.Option4Event();
     }
 
-    Volcano volcano = new Volcano
-            ("volcano",
+    RenewTheFaith RenewTheFaith = new RenewTheFaith
+            ("renewthefaith",
+                    "Your Faith in Humanity has been lost.",
+                    "Restore it.",
+                    "Empty recycling bin.",
                     "",
                     "",
                     "",
-                    "",
-                    "",
-                    "",
-                    "",
+                    "turntothedarksidemodernday",
                     "",
                     ""
             );
