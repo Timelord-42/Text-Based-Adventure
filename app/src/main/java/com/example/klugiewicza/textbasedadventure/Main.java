@@ -10,6 +10,8 @@ import com.example.klugiewicza.textbasedadventure.Util.Event;
 import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 
+import static com.example.klugiewicza.textbasedadventure.Player.PlayerName;
+
 public class Main extends AppCompatActivity
 {
 
@@ -21,13 +23,26 @@ public class Main extends AppCompatActivity
     public Button button2;
     public Button button3;
     public Button button4;
+    public Button button_start;
     public TextView maintext;
+    public EditText Name;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        button_start = (Button) findViewById(R.id.Button_Start);
+        Name = (EditText) findViewById(R.id.Name);
+        findViewById(R.id.Action_1).setVisibility(View.INVISIBLE);
+        findViewById(R.id.Action_2).setVisibility(View.INVISIBLE);
+        findViewById(R.id.Action_3).setVisibility(View.INVISIBLE);
+        findViewById(R.id.Action_4).setVisibility(View.INVISIBLE);
+    }
+
+    public void Start(View v)
+    {
+        PlayerName = Name.getText().toString();
         Main();
     }
 
@@ -37,7 +52,6 @@ public class Main extends AppCompatActivity
         button2 = (Button) findViewById(R.id.Action_2);
         button3 = (Button) findViewById(R.id.Action_3);
         button4 = (Button) findViewById(R.id.Action_4);
-
         maintext = (TextView) findViewById(R.id.MainText);
 
         FindandloadEvent("startingevent");
