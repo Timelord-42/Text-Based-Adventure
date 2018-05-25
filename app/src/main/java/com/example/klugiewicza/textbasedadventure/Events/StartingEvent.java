@@ -1,5 +1,7 @@
 package com.example.klugiewicza.textbasedadventure.Events;
 
+import android.os.Bundle;
+
 import com.example.klugiewicza.textbasedadventure.Main;
 import com.example.klugiewicza.textbasedadventure.Util.Event;
 
@@ -47,16 +49,19 @@ public class StartingEvent extends Event
         super.Option4Event();
     }
 
-    StartingEvent startingevent = new StartingEvent
-            ("startingevent",
-                    "How difficult a campaign are you interested in?",
-                    "",
-                    "",
-                    "",
-                    "",
-                    "",
-                    "",
-                    "",
-                    ""
-            );
+    protected void onCreate(Bundle savedInstanceState)
+    {
+        StartingEvent startingevent = new StartingEvent
+                ("startingevent",
+                        "How difficult a campaign are you interested in?",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        ""
+                );
+    }
 }

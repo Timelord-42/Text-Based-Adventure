@@ -13,14 +13,14 @@ import java.util.concurrent.TimeUnit;
 public class Main extends AppCompatActivity
 {
 
+    public static ArrayList<Event> events = new ArrayList<Event>();
 
-    public static ArrayList<Event> events;
+    public Event activeevent;
+
     public Button button1;
     public Button button2;
     public Button button3;
     public Button button4;
-    public Event activeevent;
-
     public TextView maintext;
 
     @Override
@@ -45,6 +45,8 @@ public class Main extends AppCompatActivity
 
     public void LoadEvent(Event e)
     {
+        activeevent = e;
+
         maintext.setText(e.description);
 
         if(!(e.Option1Text.equals("") || e.Option2Text.equals("") || e.Option3Text.equals("") || e.Option4Text.equals("")))
@@ -62,7 +64,10 @@ public class Main extends AppCompatActivity
             if(e.Option4Text.equals("")) button4.setVisibility(View.INVISIBLE); else button4.setVisibility(View.VISIBLE);
             if(e.Option1Text.equals("") && e.Option2Text.equals("") && e.Option3Text.equals("") && e.Option4Text.equals(""))
             {
-                FindandloadEvent("errorevent");
+                button1.setVisibility(View.VISIBLE);
+                button2.setVisibility(View.INVISIBLE);
+                button3.setVisibility(View.INVISIBLE);
+                button4.setVisibility(View.INVISIBLE);
             }
         }
 
@@ -119,19 +124,17 @@ public class Main extends AppCompatActivity
 
     public void FindandloadEvent(String s)
     {
-        boolean possiblyneededandyetunreasonablylongnamedboolean = false;
+        boolean possiblyneededandyetunreasonablylonglynamedboolean = false;
         int x = 0;
         while( x < events.size())
         {
             if(events.get(x).name.equals(s))
             {
-                x = events.size();
-                activeevent = events.get(x);
                 LoadEvent(events.get(x));
-                possiblyneededandyetunreasonablylongnamedboolean = true;
+                possiblyneededandyetunreasonablylonglynamedboolean = true;
             }
             x += 1;
         }
-        if(!possiblyneededandyetunreasonablylongnamedboolean) FindandloadEvent("errorevent");
+        if(!possiblyneededandyetunreasonablylonglynamedboolean) FindandloadEvent("errorevent");
     }
 }
