@@ -10,8 +10,7 @@ public class Player
     public static int str = 10;
     public static int dex = 10;
     public static int con = 10;
-    public static int wis = 10;
-    public static int intl = 10;
+    public static int wizardness = 10;
     public static int cha = 10;
     public static int luck = 100;
     public static double wealth = 0.00;
