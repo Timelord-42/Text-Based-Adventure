@@ -5,21 +5,20 @@ import com.example.klugiewicza.textbasedadventure.Util.Event;
 
 public class Volcano extends Event
 {
-    public Volcano(String name, String description, String Option1Text, String Option2Text, String Option3Text, String Option4Text,
-                 String Option1Pointer, String Option2Pointer, String Option3Pointer, String Option4Pointer)
+    public Volcano()
     {
-        this.name = name;
-        this.description = description;
+        this.name = "";
+        this.description = "";
 
-        this.Option1Text = Option1Text;
-        this.Option2Text = Option2Text;
-        this.Option3Text = Option3Text;
-        this.Option4Text = Option4Text;
+        this.Option1Text = "";
+        this.Option2Text = "";
+        this.Option3Text = "";
+        this.Option4Text = "";
 
-        this.Option1Pointer = Option1Pointer;
-        this.Option2Pointer = Option2Pointer;
-        this.Option3Pointer = Option3Pointer;
-        this.Option4Pointer = Option4Pointer;
+        this.Option1Pointer = "";
+        this.Option2Pointer = "";
+        this.Option3Pointer = "";
+        this.Option4Pointer = "";
         Main.events.add(this);
     }
 
@@ -46,17 +45,4 @@ public class Volcano extends Event
     {
         super.Option4Event();
     }
-
-    Volcano volcano = new Volcano
-            ("volcano",
-                    "",
-                    "",
-                    "",
-                    "",
-                    "",
-                    "",
-                    "",
-                    "",
-                    ""
-            );
 }

@@ -1,12 +1,18 @@
 package com.example.klugiewicza.textbasedadventure.Events;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.example.klugiewicza.textbasedadventure.Main;
 import com.example.klugiewicza.textbasedadventure.Util.Event;
+import com.example.klugiewicza.textbasedadventure.Util.MyReciever;
 
 public class StartingEvent extends Event
 {
+
+
+    public Intent blarg;
+
     public StartingEvent(String name, String description, String Option1Text, String Option2Text, String Option3Text, String Option4Text,
                  String Option1Pointer, String Option2Pointer, String Option3Pointer, String Option4Pointer)
     {
@@ -49,7 +55,7 @@ public class StartingEvent extends Event
         super.Option4Event();
     }
 
-    protected void onCreate(Bundle savedInstanceState)
+    protected void onRecieve(blarg)
     {
         StartingEvent startingevent = new StartingEvent
                 ("startingevent",
