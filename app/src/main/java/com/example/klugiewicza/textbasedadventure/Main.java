@@ -45,6 +45,7 @@ public class Main extends AppCompatActivity
     {
         PlayerName = Name.getText().toString();
         button_start.setVisibility(View.INVISIBLE);
+        Name.setVisibility(View.INVISIBLE);
         Main();
     }
 
