@@ -11,7 +11,7 @@ public class StartingEvent extends Event
 
     public StartingEvent()
     {
-        this.name = "";
+        this.name = "startingevent";
         this.description = "";
 
         this.Option1Text = "";
