@@ -10,21 +10,20 @@ public interface ErrorEventChain
 {
     public class ErrorEvent extends Event
     {
-        public ErrorEvent(String name, String description, String Option1Text, String Option2Text, String Option3Text, String Option4Text,
-                          String Option1Pointer, String Option2Pointer, String Option3Pointer, String Option4Pointer)
+        public ErrorEvent()
         {
-            this.name = name;
-            this.description = description;
+            this.name = "errorevent";
+            this.description = "Something somewhere just went terribly and horribly wrong.";
 
-            this.Option1Text = Option1Text;
-            this.Option2Text = Option2Text;
-            this.Option3Text = Option3Text;
-            this.Option4Text = Option4Text;
+            this.Option1Text = "I hope a developer just lost a job.";
+            this.Option2Text = "This is why we can't have nice things.";
+            this.Option3Text = "Eh, still a better story hook than the last campaign I played.";
+            this.Option4Text = "ERROR: Cannot find file faith.txt in folder C:/Users/Humanity/, are you sure you didn't lose it?";
 
-            this.Option1Pointer = Option1Pointer;
-            this.Option2Pointer = Option2Pointer;
-            this.Option3Pointer = Option3Pointer;
-            this.Option4Pointer = Option4Pointer;
+            this.Option1Pointer = "thetruecalling";
+            this.Option2Pointer = "thetruecalling";
+            this.Option3Pointer = "amightyquestunfolds";
+            this.Option4Pointer = "renewthefaith";
             Main.events.add(this);
         }
 
@@ -51,19 +50,6 @@ public interface ErrorEventChain
         {
             super.Option4Event();
         }
-
-        ErrorEvent error = new ErrorEvent
-                ("errorevent",
-                        "Something somewhere just went terribly and horribly wrong.",
-                        "I hope a developer just lost a job.",
-                        "This is why we can't have nice things.",
-                        "Eh, still a better story hook than the last campaign I played.",
-                        "ERROR: Cannot find file faith.txt in folder C:/Users/Humanity/, are you sure you didn't lose it?",
-                        "thetruecalling",
-                        "thetruecalling",
-                        "amightyquestunfolds",
-                        "renewthefaith"
-                );
     }
 
     public class OverthrowTheDeveloper extends Event

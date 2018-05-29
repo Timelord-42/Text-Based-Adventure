@@ -156,7 +156,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Name"
-        android:visibility="invisible"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
