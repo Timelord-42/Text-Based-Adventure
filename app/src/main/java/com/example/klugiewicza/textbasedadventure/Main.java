@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.*;
 
 import com.example.klugiewicza.textbasedadventure.Util.Event;
+import com.example.klugiewicza.textbasedadventure.Util.WrittenEvents;
 
 import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
@@ -48,6 +49,7 @@ public class Main extends AppCompatActivity
 
     void Main()
     {
+        WrittenEvents.InitializeEvents();
         button1 = (Button) findViewById(R.id.Action_1);
         button2 = (Button) findViewById(R.id.Action_2);
         button3 = (Button) findViewById(R.id.Action_3);
