@@ -12,14 +12,14 @@ public class StartingEvent extends Event
     public StartingEvent()
     {
         this.name = "startingevent";
-        this.description = "";
+        this.description = "Beat This!";
 
-        this.Option1Text = "";
-        this.Option2Text = "";
-        this.Option3Text = "";
-        this.Option4Text = "";
+        this.Option1Text = "Click This";
+        this.Option2Text = "Don't click";
+        this.Option3Text = "Don't click";
+        this.Option4Text = "Don't click";
 
-        this.Option1Pointer = "";
+        this.Option1Pointer = "volcano";
         this.Option2Pointer = "";
         this.Option3Pointer = "";
         this.Option4Pointer = "";

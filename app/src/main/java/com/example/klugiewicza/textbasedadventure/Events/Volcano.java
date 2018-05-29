@@ -7,13 +7,13 @@ public class Volcano extends Event
 {
     public Volcano()
     {
-        this.name = "";
-        this.description = "";
+        this.name = "volcano";
+        this.description = "Burn";
 
-        this.Option1Text = "";
-        this.Option2Text = "";
-        this.Option3Text = "";
-        this.Option4Text = "";
+        this.Option1Text = "1";
+        this.Option2Text = "6";
+        this.Option3Text = "9";
+        this.Option4Text = "6";
 
         this.Option1Pointer = "";
         this.Option2Pointer = "";
