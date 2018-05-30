@@ -1,4 +1,4 @@
-package com.example.klugiewicza.textbasedadventure.Events;
+package com.example.klugiewicza.textbasedadventure.Events.StartingEvents;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,14 +12,14 @@ public class StartingEvent extends Event
     public StartingEvent()
     {
         this.name = "startingevent";
-        this.description = "Beat This!";
+        this.description = "Your GM presides over the table and looks around to see if everyone is ready to begin. What do you do?";
 
-        this.Option1Text = "Click This";
-        this.Option2Text = "Don't click";
-        this.Option3Text = "Don't click";
-        this.Option4Text = "Don't click";
+        this.Option1Text = "Launch into your dedicated character backstory for several minutes...";
+        this.Option2Text = "Quickly scramble to finish the character you havn't finished yet";
+        this.Option3Text = "Sit quietly becuase you have no idea what is going on.";
+        this.Option4Text = "Smirk, becuase you min-maxed to shit and nothing's going to touch your character.";
 
-        this.Option1Pointer = "volcano";
+        this.Option1Pointer = "";
         this.Option2Pointer = "";
         this.Option3Pointer = "";
         this.Option4Pointer = "";
