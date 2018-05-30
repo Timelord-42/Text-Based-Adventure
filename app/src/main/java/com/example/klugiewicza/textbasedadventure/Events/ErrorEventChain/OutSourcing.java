@@ -1,27 +1,23 @@
-package com.example.klugiewicza.textbasedadventure.Events;
-
-import android.content.Intent;
-import android.os.Bundle;
+package com.example.klugiewicza.textbasedadventure.Events.ErrorEventChain;
 
 import com.example.klugiewicza.textbasedadventure.Main;
 import com.example.klugiewicza.textbasedadventure.Util.Event;
 
-public class StartingEvent extends Event
+public class OutSourcing extends Event
 {
-
-    public StartingEvent()
+    public OutSourcing()
     {
-        this.name = "startingevent";
-        this.description = "Beat This!";
+        this.name = "outsourcing";
+        this.description = "Who should you outsource the vocation removal to?";
 
-        this.Option1Text = "Click This";
-        this.Option2Text = "Don't click";
-        this.Option3Text = "Don't click";
-        this.Option4Text = "Don't click";
+        this.Option1Text = "The Mob";
+        this.Option2Text = "Space Aliens";
+        this.Option3Text = "I'll just cast a spell...";
+        this.Option4Text = "";
 
-        this.Option1Pointer = "volcano";
+        this.Option1Pointer = "";
         this.Option2Pointer = "";
-        this.Option3Pointer = "";
+        this.Option3Pointer = "thisismodernday";
         this.Option4Pointer = "";
         Main.events.add(this);
     }

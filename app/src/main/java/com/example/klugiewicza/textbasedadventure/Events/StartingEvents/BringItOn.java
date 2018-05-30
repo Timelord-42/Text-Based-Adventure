@@ -1,14 +1,14 @@
-package com.example.klugiewicza.textbasedadventure.Events;
+package com.example.klugiewicza.textbasedadventure.Events.StartingEvents;
 
 import com.example.klugiewicza.textbasedadventure.Main;
 import com.example.klugiewicza.textbasedadventure.Util.Event;
 
-public class Volcano extends Event
+public class BringItOn extends Event
 {
-    public Volcano()
+    public BringItOn()
     {
-        this.name = "volcano";
-        this.description = "";
+        this.name = "BringItOn";
+        this.description = "Your GM launches into an adventure about...";
 
         this.Option1Text = "";
         this.Option2Text = "";
