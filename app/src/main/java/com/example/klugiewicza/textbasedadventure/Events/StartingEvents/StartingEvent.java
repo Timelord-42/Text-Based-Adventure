@@ -16,13 +16,13 @@ public class StartingEvent extends Event
 
         this.Option1Text = "Launch into your dedicated character backstory for several minutes...";
         this.Option2Text = "Quickly scramble to finish the character you havn't finished yet";
-        this.Option3Text = "Sit quietly becuase you have no idea what is going on.";
-        this.Option4Text = "Smirk, becuase you min-maxed to shit and nothing's going to touch your character.";
+        this.Option3Text = "Sit quietly because you have no idea what is going on.";
+        this.Option4Text = "Smirk, because you min-maxed to sh*t and nothing's going to touch your character.";
 
         this.Option1Pointer = "";
         this.Option2Pointer = "";
         this.Option3Pointer = "";
-        this.Option4Pointer = "";
+        this.Option4Pointer = "minmaxxer";
         Main.events.add(this);
     }
 
